@@ -15,21 +15,24 @@
       background-color: #f9f9f9;
       color: #333;
     }
-
+    
     header {
       background-color: white;
       color: var(--rouge-spcoc);
-      padding: 20px;
-      text-align: center;
+      height: 80px; /* Hauteur fixe */
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: relative;
       border-bottom: 3px solid var(--rouge-spcoc);
     }
 
     header img {
       position: absolute;
-      top: 10px;
-      left: 10px;
-      height: 60px;
+      left: 20px;
+      max-height: 60px; /* S’adapte à la hauteur du header */
+      height: auto;
+      width: auto;
     }
 
     header h1 {
@@ -85,7 +88,7 @@
 <body>
 
   <header>
-    <img src="logo-spcoc.svg" alt="Logo SPCOC Handball">
+    <img src="logo-spcoc.svg" alt="Logo SPCOC Handball" size=>
     <h1>Tarifs 2024–2025 - SPCOC Handball</h1>
   </header>
 
